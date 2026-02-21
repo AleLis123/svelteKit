@@ -10,6 +10,18 @@
 		"sourceMap": true,
 		"strict": true,
 		"module": "NodeNext",
-		"moduleResolution": "NodeNext"
-	}
+		"moduleResolution": "NodeNext",
+		"baseUrl": ".",
+		"paths": {
+			"$lib/*": [
+				"src/lib/*"
+			]
+		}
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
 }
